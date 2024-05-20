@@ -1,0 +1,2863 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/jquery.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/jquery-ui.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/ResizeSensor.js"></script>
+
+            <link rel="stylesheet"  href="https://assets.pyecharts.org/assets/v5/jquery-ui.css">
+
+</head>
+<body >
+    <style>.box {  } </style>
+        
+    <div class="box">
+                <div id="bar" class="chart-container" style="position: absolute; width: 899.77778px; height: 499.77778px; top: 1.09375px; left: 294.982666015625px;"></div>
+    <script>
+        var chart_bar = echarts.init(
+            document.getElementById('bar'), 'white', {renderer: 'canvas'});
+        var option_bar = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u7535\u5f71\u6570\u91cf",
+            "legendHoverLink": true,
+            "data": [
+                1,
+                2,
+                8,
+                32,
+                141,
+                371,
+                367,
+                77,
+                1
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u7535\u5f71\u6570\u91cf"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "name": "\u8bc4\u5206\u6bb5",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "1-2",
+                "2-3",
+                "3-4",
+                "4-5",
+                "5-6",
+                "6-7",
+                "7-8",
+                "8-9",
+                "9-10"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u7535\u5f71\u6570\u91cf",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "\u8bc4\u5206\u6bb5\u7535\u5f71\u6570\u91cf\u7edf\u8ba1",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_bar.setOption(option_bar);
+    </script>
+<br/>                <div id="line_1" class="chart-container" style="position: absolute; width: 899.77778px; height: 499.77778px; top: 1.4236111640930176px; left: 1302.9862060546875px;"></div>
+    <script>
+        var chart_line_1 = echarts.init(
+            document.getElementById('line_1'), 'white', {renderer: 'canvas'});
+        var option_line_1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u7968\u623f (\u767e\u4e07\u7f8e\u5143)",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "2006",
+                    3624.46
+                ],
+                [
+                    "2007",
+                    4306.23
+                ],
+                [
+                    "2008",
+                    5053.22
+                ],
+                [
+                    "2009",
+                    5292.26
+                ],
+                [
+                    "2010",
+                    5989.65
+                ],
+                [
+                    "2011",
+                    5431.96
+                ],
+                [
+                    "2012",
+                    6910.29
+                ],
+                [
+                    "2013",
+                    7666.72
+                ],
+                [
+                    "2014",
+                    7997.4
+                ],
+                [
+                    "2015",
+                    8854.119999999999
+                ],
+                [
+                    "2016",
+                    11211.65
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u7968\u623f (\u767e\u4e07\u7f8e\u5143)"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "name": "\u5e74\u4efd",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u7968\u623f (\u767e\u4e07\u7f8e\u5143)",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "\u5e74\u5ea6\u7968\u623f\u7edf\u8ba1",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_line_1.setOption(option_line_1);
+    </script>
+<br/>                <div id="scatter_1" class="chart-container" style="position: absolute; width: 899.77778px; height: 499.77778px; top: 960.763916015625px; left: 292.9861145019531px;"></div>
+    <script>
+        var chart_scatter_1 = echarts.init(
+            document.getElementById('scatter_1'), 'white', {renderer: 'canvas'});
+        var option_scatter_1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "name": "\u7968\u623f",
+            "symbolSize": 10,
+            "data": [
+                [
+                    76,
+                    1765
+                ],
+                [
+                    65,
+                    2993
+                ],
+                [
+                    62,
+                    1900
+                ],
+                [
+                    59,
+                    2099
+                ],
+                [
+                    40,
+                    842
+                ],
+                [
+                    42,
+                    1007
+                ],
+                [
+                    93,
+                    197
+                ],
+                [
+                    78,
+                    1337
+                ],
+                [
+                    41,
+                    586
+                ],
+                [
+                    66,
+                    2588
+                ],
+                [
+                    74,
+                    2151
+                ],
+                [
+                    81,
+                    2551
+                ],
+                [
+                    70,
+                    628
+                ],
+                [
+                    61,
+                    1601
+                ],
+                [
+                    71,
+                    1271
+                ],
+                [
+                    58,
+                    1985
+                ],
+                [
+                    69,
+                    1779
+                ],
+                [
+                    49,
+                    862
+                ],
+                [
+                    96,
+                    584
+                ],
+                [
+                    56,
+                    1594
+                ],
+                [
+                    32,
+                    589
+                ],
+                [
+                    60,
+                    1212
+                ],
+                [
+                    36,
+                    341
+                ],
+                [
+                    39,
+                    813
+                ],
+                [
+                    67,
+                    868
+                ],
+                [
+                    52,
+                    1154
+                ],
+                [
+                    75,
+                    1264
+                ],
+                [
+                    72,
+                    2171
+                ],
+                [
+                    54,
+                    700
+                ],
+                [
+                    99,
+                    27
+                ],
+                [
+                    57,
+                    1873
+                ],
+                [
+                    45,
+                    907
+                ],
+                [
+                    64,
+                    1526
+                ],
+                [
+                    68,
+                    1677
+                ],
+                [
+                    23,
+                    170
+                ],
+                [
+                    18,
+                    76
+                ],
+                [
+                    82,
+                    1016
+                ],
+                [
+                    79,
+                    1168
+                ],
+                [
+                    51,
+                    1001
+                ],
+                [
+                    44,
+                    1202
+                ],
+                [
+                    48,
+                    1173
+                ],
+                [
+                    46,
+                    883
+                ],
+                [
+                    90,
+                    337
+                ],
+                [
+                    50,
+                    925
+                ],
+                [
+                    53,
+                    1863
+                ],
+                [
+                    83,
+                    1326
+                ],
+                [
+                    77,
+                    1132
+                ],
+                [
+                    85,
+                    551
+                ],
+                [
+                    55,
+                    968
+                ],
+                [
+                    80,
+                    731
+                ],
+                [
+                    88,
+                    575
+                ],
+                [
+                    87,
+                    508
+                ],
+                [
+                    91,
+                    74
+                ],
+                [
+                    63,
+                    1195
+                ],
+                [
+                    86,
+                    476
+                ],
+                [
+                    84,
+                    311
+                ],
+                [
+                    29,
+                    138
+                ],
+                [
+                    47,
+                    686
+                ],
+                [
+                    73,
+                    1283
+                ],
+                [
+                    33,
+                    457
+                ],
+                [
+                    43,
+                    432
+                ],
+                [
+                    25,
+                    31
+                ],
+                [
+                    98,
+                    37
+                ],
+                [
+                    35,
+                    747
+                ],
+                [
+                    31,
+                    462
+                ],
+                [
+                    94,
+                    372
+                ],
+                [
+                    38,
+                    235
+                ],
+                [
+                    34,
+                    676
+                ],
+                [
+                    26,
+                    107
+                ],
+                [
+                    92,
+                    455
+                ],
+                [
+                    95,
+                    192
+                ],
+                [
+                    30,
+                    328
+                ],
+                [
+                    27,
+                    230
+                ],
+                [
+                    19,
+                    133
+                ],
+                [
+                    28,
+                    161
+                ],
+                [
+                    89,
+                    11
+                ],
+                [
+                    22,
+                    4
+                ],
+                [
+                    37,
+                    420
+                ],
+                [
+                    100,
+                    25
+                ],
+                [
+                    15,
+                    14
+                ],
+                [
+                    24,
+                    64
+                ],
+                [
+                    11,
+                    19
+                ]
+            ],
+            "label": {
+                "show": false,
+                "margin": 8
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u62df\u5408\u66f2\u7ebf",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    11,
+                    -17.82726944820024
+                ],
+                [
+                    15,
+                    195.4947244680443
+                ],
+                [
+                    18,
+                    13.1811752899157
+                ],
+                [
+                    19,
+                    -20.834858492824424
+                ],
+                [
+                    22,
+                    -8.756644482862612
+                ],
+                [
+                    23,
+                    26.27017171165062
+                ],
+                [
+                    24,
+                    71.15516234095412
+                ],
+                [
+                    25,
+                    122.28533866475482
+                ],
+                [
+                    26,
+                    176.3457238220799
+                ],
+                [
+                    27,
+                    230.5023137925673
+                ],
+                [
+                    28,
+                    282.50595902465284
+                ],
+                [
+                    29,
+                    330.73353314071574
+                ],
+                [
+                    30,
+                    374.18069830146123
+                ],
+                [
+                    31,
+                    412.41867243866
+                ],
+                [
+                    32,
+                    445.5256464367776
+                ],
+                [
+                    33,
+                    474.00188424690714
+                ],
+                [
+                    34,
+                    498.67606067317683
+                ],
+                [
+                    35,
+                    520.609044970879
+                ],
+                [
+                    36,
+                    541.0001181886182
+                ],
+                [
+                    37,
+                    561.0995132699973
+                ],
+                [
+                    38,
+                    582.1301839963635
+                ],
+                [
+                    39,
+                    605.2208367429703
+                ],
+                [
+                    40,
+                    631.3514925792479
+                ],
+                [
+                    41,
+                    661.3121811499441
+                ],
+                [
+                    42,
+                    695.6747969683274
+                ],
+                [
+                    43,
+                    734.777667880262
+                ],
+                [
+                    44,
+                    778.7219894847512
+                ],
+                [
+                    45,
+                    827.3789628715094
+                ],
+                [
+                    46,
+                    880.4062309528235
+                ],
+                [
+                    47,
+                    937.2720360194144
+                ],
+                [
+                    48,
+                    997.2854121205964
+                ],
+                [
+                    49,
+                    1059.6306760524894
+                ],
+                [
+                    50,
+                    1123.4044841613286
+                ],
+                [
+                    51,
+                    1187.653774213526
+                ],
+                [
+                    52,
+                    1251.4130066426587
+                ],
+                [
+                    53,
+                    1313.7392527873017
+                ],
+                [
+                    54,
+                    1373.7438432653944
+                ],
+                [
+                    55,
+                    1430.6194836899958
+                ],
+                [
+                    56,
+                    1483.6619600797058
+                ],
+                [
+                    57,
+                    1532.285789976886
+                ],
+                [
+                    58,
+                    1576.0334198581331
+                ],
+                [
+                    59,
+                    1614.5778213616795
+                ],
+                [
+                    60,
+                    1647.7185919805706
+                ],
+                [
+                    61,
+                    1675.3719158995373
+                ],
+                [
+                    62,
+                    1697.5549809678123
+                ],
+                [
+                    63,
+                    1714.365675153087
+                ],
+                [
+                    64,
+                    1725.9585925753854
+                ],
+                [
+                    65,
+                    1732.518563276135
+                ],
+                [
+                    66,
+                    1734.2330731705079
+                ],
+                [
+                    67,
+                    1731.2650604848532
+                ],
+                [
+                    68,
+                    1723.727651672234
+                ],
+                [
+                    69,
+                    1711.662435093509
+                ],
+                [
+                    70,
+                    1695.0228519705852
+                ],
+                [
+                    71,
+                    1673.6642114057904
+                ],
+                [
+                    72,
+                    1647.341703478589
+                ],
+                [
+                    73,
+                    1615.7175826935563
+                ],
+                [
+                    74,
+                    1578.3784254822313
+                ],
+                [
+                    75,
+                    1534.8630143156915
+                ],
+                [
+                    76,
+                    1484.7009756943226
+                ],
+                [
+                    77,
+                    1427.4617791431883
+                ],
+                [
+                    78,
+                    1362.813099059691
+                ],
+                [
+                    79,
+                    1290.5868340753223
+                ],
+                [
+                    80,
+                    1210.8502700539757
+                ],
+                [
+                    81,
+                    1123.9789591981971
+                ],
+                [
+                    82,
+                    1030.7268554629773
+                ],
+                [
+                    83,
+                    932.2881042414956
+                ],
+                [
+                    84,
+                    830.3436091268813
+                ],
+                [
+                    85,
+                    727.084103818328
+                ],
+                [
+                    86,
+                    625.1999226154076
+                ],
+                [
+                    87,
+                    527.8259928733896
+                ],
+                [
+                    88,
+                    438.42875644239393
+                ],
+                [
+                    89,
+                    360.6197622405889
+                ],
+                [
+                    90,
+                    297.87855390914046
+                ],
+                [
+                    91,
+                    253.1651970259336
+                ],
+                [
+                    92,
+                    228.40034506167285
+                ],
+                [
+                    93,
+                    223.7881303838294
+                ],
+                [
+                    94,
+                    236.95437912373745
+                ],
+                [
+                    95,
+                    261.8696717115308
+                ],
+                [
+                    96,
+                    287.52362598006584
+                ],
+                [
+                    98,
+                    262.10605274004774
+                ],
+                [
+                    99,
+                    147.93003517324541
+                ],
+                [
+                    100,
+                    -96.75162769838062
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u7968\u623f",
+                "\u62df\u5408\u66f2\u7ebf"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "type": "value",
+            "name": "Meta",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 10,
+            "min": 0,
+            "max": 100,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                76,
+                65,
+                62,
+                59,
+                40,
+                42,
+                93,
+                78,
+                41,
+                66,
+                74,
+                81,
+                70,
+                61,
+                71,
+                58,
+                69,
+                49,
+                96,
+                56,
+                32,
+                60,
+                36,
+                39,
+                67,
+                52,
+                75,
+                72,
+                54,
+                99,
+                57,
+                45,
+                64,
+                68,
+                23,
+                18,
+                82,
+                79,
+                51,
+                44,
+                48,
+                46,
+                90,
+                50,
+                53,
+                83,
+                77,
+                85,
+                55,
+                80,
+                88,
+                87,
+                91,
+                63,
+                86,
+                84,
+                29,
+                47,
+                73,
+                33,
+                43,
+                25,
+                98,
+                35,
+                31,
+                94,
+                38,
+                34,
+                26,
+                92,
+                95,
+                30,
+                27,
+                19,
+                28,
+                89,
+                22,
+                37,
+                100,
+                15,
+                24,
+                11
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "\u7968\u623f",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 10,
+            "min": 0,
+            "max": 3000,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_scatter_1.setOption(option_scatter_1);
+    </script>
+<br/>                <div id="scatter_2" class="chart-container" style="position: absolute; width: 899.77778px; height: 499.77778px; top: 959.0972900390625px; left: 1302.9862060546875px;"></div>
+    <script>
+        var chart_scatter_2 = echarts.init(
+            document.getElementById('scatter_2'), 'white', {renderer: 'canvas'});
+        var option_scatter_2 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "name": "Meta\u8bc4\u5206",
+            "symbolSize": 10,
+            "data": [
+                [
+                    121,
+                    456
+                ],
+                [
+                    124,
+                    859
+                ],
+                [
+                    117,
+                    1543
+                ],
+                [
+                    108,
+                    1708
+                ],
+                [
+                    123,
+                    1103
+                ],
+                [
+                    103,
+                    698
+                ],
+                [
+                    128,
+                    673
+                ],
+                [
+                    89,
+                    567
+                ],
+                [
+                    141,
+                    318
+                ],
+                [
+                    116,
+                    1010
+                ],
+                [
+                    133,
+                    843
+                ],
+                [
+                    127,
+                    577
+                ],
+                [
+                    107,
+                    1068
+                ],
+                [
+                    109,
+                    898
+                ],
+                [
+                    87,
+                    458
+                ],
+                [
+                    139,
+                    484
+                ],
+                [
+                    118,
+                    1521
+                ],
+                [
+                    120,
+                    1238
+                ],
+                [
+                    137,
+                    417
+                ],
+                [
+                    92,
+                    1103
+                ],
+                [
+                    100,
+                    1630
+                ],
+                [
+                    115,
+                    1217
+                ],
+                [
+                    111,
+                    1168
+                ],
+                [
+                    144,
+                    464
+                ],
+                [
+                    147,
+                    203
+                ],
+                [
+                    169,
+                    182
+                ],
+                [
+                    132,
+                    676
+                ],
+                [
+                    99,
+                    759
+                ],
+                [
+                    136,
+                    262
+                ],
+                [
+                    122,
+                    911
+                ],
+                [
+                    130,
+                    728
+                ],
+                [
+                    91,
+                    505
+                ],
+                [
+                    101,
+                    1187
+                ],
+                [
+                    152,
+                    158
+                ],
+                [
+                    161,
+                    145
+                ],
+                [
+                    88,
+                    759
+                ],
+                [
+                    106,
+                    1325
+                ],
+                [
+                    96,
+                    1144
+                ],
+                [
+                    151,
+                    238
+                ],
+                [
+                    86,
+                    466
+                ],
+                [
+                    112,
+                    1254
+                ],
+                [
+                    125,
+                    639
+                ],
+                [
+                    129,
+                    730
+                ],
+                [
+                    97,
+                    963
+                ],
+                [
+                    143,
+                    393
+                ],
+                [
+                    153,
+                    272
+                ],
+                [
+                    148,
+                    332
+                ],
+                [
+                    180,
+                    163
+                ],
+                [
+                    149,
+                    125
+                ],
+                [
+                    162,
+                    232
+                ],
+                [
+                    187,
+                    68
+                ],
+                [
+                    146,
+                    277
+                ],
+                [
+                    114,
+                    812
+                ],
+                [
+                    90,
+                    446
+                ],
+                [
+                    105,
+                    849
+                ],
+                [
+                    102,
+                    1294
+                ],
+                [
+                    110,
+                    1338
+                ],
+                [
+                    134,
+                    366
+                ],
+                [
+                    104,
+                    1180
+                ],
+                [
+                    98,
+                    1184
+                ],
+                [
+                    164,
+                    78
+                ],
+                [
+                    165,
+                    308
+                ],
+                [
+                    156,
+                    157
+                ],
+                [
+                    140,
+                    401
+                ],
+                [
+                    138,
+                    368
+                ],
+                [
+                    94,
+                    1028
+                ],
+                [
+                    113,
+                    1004
+                ],
+                [
+                    142,
+                    202
+                ],
+                [
+                    131,
+                    623
+                ],
+                [
+                    84,
+                    199
+                ],
+                [
+                    126,
+                    687
+                ],
+                [
+                    135,
+                    234
+                ],
+                [
+                    119,
+                    1031
+                ],
+                [
+                    158,
+                    275
+                ],
+                [
+                    163,
+                    79
+                ],
+                [
+                    95,
+                    1219
+                ],
+                [
+                    85,
+                    459
+                ],
+                [
+                    81,
+                    210
+                ],
+                [
+                    172,
+                    55
+                ],
+                [
+                    157,
+                    249
+                ],
+                [
+                    93,
+                    553
+                ],
+                [
+                    150,
+                    173
+                ],
+                [
+                    166,
+                    70
+                ],
+                [
+                    170,
+                    67
+                ],
+                [
+                    154,
+                    114
+                ],
+                [
+                    83,
+                    280
+                ],
+                [
+                    160,
+                    68
+                ],
+                [
+                    80,
+                    155
+                ],
+                [
+                    82,
+                    77
+                ],
+                [
+                    66,
+                    85
+                ],
+                [
+                    73,
+                    63
+                ],
+                [
+                    145,
+                    53
+                ]
+            ],
+            "label": {
+                "show": false,
+                "margin": 8
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u62df\u5408\u66f2\u7ebf",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    66,
+                    -685.2172321896378
+                ],
+                [
+                    73,
+                    -75.01004382769679
+                ],
+                [
+                    80,
+                    384.46030981162767
+                ],
+                [
+                    81,
+                    438.7395990904806
+                ],
+                [
+                    82,
+                    490.32091246135315
+                ],
+                [
+                    83,
+                    539.2515356773947
+                ],
+                [
+                    84,
+                    585.578754491733
+                ],
+                [
+                    85,
+                    629.3498546575247
+                ],
+                [
+                    86,
+                    670.6121219279012
+                ],
+                [
+                    87,
+                    709.4128420560082
+                ],
+                [
+                    88,
+                    745.7993007949844
+                ],
+                [
+                    89,
+                    779.8187838979829
+                ],
+                [
+                    90,
+                    811.5185771181314
+                ],
+                [
+                    91,
+                    840.9459662085756
+                ],
+                [
+                    92,
+                    868.148236922465
+                ],
+                [
+                    93,
+                    893.1726750129346
+                ],
+                [
+                    94,
+                    916.0665662331303
+                ],
+                [
+                    95,
+                    936.8771963361833
+                ],
+                [
+                    96,
+                    955.6518510752503
+                ],
+                [
+                    97,
+                    972.43781620347
+                ],
+                [
+                    98,
+                    987.28237747397
+                ],
+                [
+                    99,
+                    1000.2328206399143
+                ],
+                [
+                    100,
+                    1011.3364314544306
+                ],
+                [
+                    101,
+                    1020.6404956706647
+                ],
+                [
+                    102,
+                    1028.1922990417552
+                ],
+                [
+                    103,
+                    1034.039127320848
+                ],
+                [
+                    104,
+                    1038.228266261085
+                ],
+                [
+                    105,
+                    1040.8070016156016
+                ],
+                [
+                    106,
+                    1041.8226191375506
+                ],
+                [
+                    107,
+                    1041.322404580067
+                ],
+                [
+                    108,
+                    1039.3536436962931
+                ],
+                [
+                    109,
+                    1035.9636222393674
+                ],
+                [
+                    110,
+                    1031.199625962443
+                ],
+                [
+                    111,
+                    1025.108940618662
+                ],
+                [
+                    112,
+                    1017.7388519611413
+                ],
+                [
+                    113,
+                    1009.1366457430522
+                ],
+                [
+                    114,
+                    999.3496077175259
+                ],
+                [
+                    115,
+                    988.4250236377011
+                ],
+                [
+                    116,
+                    976.4101792567235
+                ],
+                [
+                    117,
+                    963.3523603277245
+                ],
+                [
+                    118,
+                    949.2988526038644
+                ],
+                [
+                    119,
+                    934.2969418382672
+                ],
+                [
+                    120,
+                    918.3939137841007
+                ],
+                [
+                    121,
+                    901.6370541944816
+                ],
+                [
+                    122,
+                    884.0736488225593
+                ],
+                [
+                    123,
+                    865.7509834214761
+                ],
+                [
+                    124,
+                    846.7163437443669
+                ],
+                [
+                    125,
+                    827.017015544392
+                ],
+                [
+                    126,
+                    806.700284574672
+                ],
+                [
+                    127,
+                    785.8134365883634
+                ],
+                [
+                    128,
+                    764.4037573386086
+                ],
+                [
+                    129,
+                    742.5185325785424
+                ],
+                [
+                    130,
+                    720.2050480613107
+                ],
+                [
+                    131,
+                    697.5105895400447
+                ],
+                [
+                    132,
+                    674.482442767905
+                ],
+                [
+                    133,
+                    651.1678934980155
+                ],
+                [
+                    134,
+                    627.6142274835329
+                ],
+                [
+                    135,
+                    603.8687304775922
+                ],
+                [
+                    136,
+                    579.9786882333392
+                ],
+                [
+                    137,
+                    555.9913865039089
+                ],
+                [
+                    138,
+                    531.9541110424398
+                ],
+                [
+                    139,
+                    507.91414760209227
+                ],
+                [
+                    140,
+                    483.91878193598313
+                ],
+                [
+                    141,
+                    460.01529979728
+                ],
+                [
+                    142,
+                    436.2509869391142
+                ],
+                [
+                    143,
+                    412.6731291146207
+                ],
+                [
+                    144,
+                    389.3290120769525
+                ],
+                [
+                    145,
+                    366.2659215792337
+                ],
+                [
+                    146,
+                    343.5311433746283
+                ],
+                [
+                    147,
+                    321.17196321626034
+                ],
+                [
+                    148,
+                    299.2356668572902
+                ],
+                [
+                    149,
+                    277.76954005084554
+                ],
+                [
+                    150,
+                    256.82086855007583
+                ],
+                [
+                    151,
+                    236.436938108116
+                ],
+                [
+                    152,
+                    216.66503447810464
+                ],
+                [
+                    153,
+                    197.5524434131985
+                ],
+                [
+                    154,
+                    179.14645066652156
+                ],
+                [
+                    156,
+                    144.6434031404715
+                ],
+                [
+                    157,
+                    128.6409198673755
+                ],
+                [
+                    158,
+                    113.53417792508117
+                ],
+                [
+                    160,
+                    86.1970610454664
+                ],
+                [
+                    161,
+                    74.06125761444855
+                ],
+                [
+                    162,
+                    63.010338526801206
+                ],
+                [
+                    163,
+                    53.09158953566293
+                ],
+                [
+                    164,
+                    44.35229639419049
+                ],
+                [
+                    165,
+                    36.839744855511526
+                ],
+                [
+                    166,
+                    30.601220672779164
+                ],
+                [
+                    169,
+                    20.002669791654625
+                ],
+                [
+                    170,
+                    19.33311256410161
+                ],
+                [
+                    172,
+                    22.57265222710339
+                ],
+                [
+                    180,
+                    103.5147762478955
+                ],
+                [
+                    187,
+                    277.6356008723196
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Meta\u8bc4\u5206",
+                "\u62df\u5408\u66f2\u7ebf"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "type": "value",
+            "name": "\u65f6\u957f",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 10,
+            "min": 0,
+            "max": 200,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                121,
+                124,
+                117,
+                108,
+                123,
+                103,
+                128,
+                89,
+                141,
+                116,
+                133,
+                127,
+                107,
+                109,
+                87,
+                139,
+                118,
+                120,
+                137,
+                92,
+                100,
+                115,
+                111,
+                144,
+                147,
+                169,
+                132,
+                99,
+                136,
+                122,
+                130,
+                91,
+                101,
+                152,
+                161,
+                88,
+                106,
+                96,
+                151,
+                86,
+                112,
+                125,
+                129,
+                97,
+                143,
+                153,
+                148,
+                180,
+                149,
+                162,
+                187,
+                146,
+                114,
+                90,
+                105,
+                102,
+                110,
+                134,
+                104,
+                98,
+                164,
+                165,
+                156,
+                140,
+                138,
+                94,
+                113,
+                142,
+                131,
+                84,
+                126,
+                135,
+                119,
+                158,
+                163,
+                95,
+                85,
+                81,
+                172,
+                157,
+                93,
+                150,
+                166,
+                170,
+                154,
+                83,
+                160,
+                80,
+                82,
+                66,
+                73,
+                145
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "Meta",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 9,
+            "min": 0,
+            "max": 1800,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_scatter_2.setOption(option_scatter_2);
+    </script>
+<br/>                <div id="line_5" class="chart-container" style="position: absolute; width: 899.77778px; height: 499.77778px; top: 459.4270935058594px; left: 294.982666015625px;"></div>
+    <script>
+        var chart_line_5 = echarts.init(
+            document.getElementById('line_5'), 'white', {renderer: 'canvas'});
+        var option_line_5 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u62cd\u6444\u7535\u5f71\u6570",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "Ridley Scott",
+                    8
+                ],
+                [
+                    "David Yates",
+                    6
+                ],
+                [
+                    "M. Night Shyamalan",
+                    6
+                ],
+                [
+                    "Paul W.S. Anderson",
+                    6
+                ],
+                [
+                    "Michael Bay",
+                    6
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u62cd\u6444\u7535\u5f71\u6570"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "name": "\u5bfc\u6f14\u540d\u5b57",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "rotate": 45,
+                "interval": 0
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "Ridley Scott",
+                "David Yates",
+                "M. Night Shyamalan",
+                "Paul W.S. Anderson",
+                "Michael Bay"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u62cd\u6444\u7535\u5f71\u6570",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "\u524d5\u4f4d\u5bfc\u6f14\u7684\u62cd\u6444\u7535\u5f71\u6570",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_line_5.setOption(option_line_5);
+    </script>
+<br/>                <div id="line_10" class="chart-container" style="position: absolute; width: 899.77778px; height: 499.77778px; top: 456.75347900390625px; left: 1302.9862060546875px;"></div>
+    <script>
+        var chart_line_10 = echarts.init(
+            document.getElementById('line_10'), 'white', {renderer: 'canvas'});
+        var option_line_10 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u62cd\u6444\u7535\u5f71\u6570",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "Ridley Scott",
+                    8
+                ],
+                [
+                    "David Yates",
+                    6
+                ],
+                [
+                    "M. Night Shyamalan",
+                    6
+                ],
+                [
+                    "Paul W.S. Anderson",
+                    6
+                ],
+                [
+                    "Michael Bay",
+                    6
+                ],
+                [
+                    "Zack Snyder",
+                    5
+                ],
+                [
+                    "Denis Villeneuve",
+                    5
+                ],
+                [
+                    "Woody Allen",
+                    5
+                ],
+                [
+                    "Peter Berg",
+                    5
+                ],
+                [
+                    "Danny Boyle",
+                    5
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u62cd\u6444\u7535\u5f71\u6570"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "name": "\u5bfc\u6f14\u540d\u5b57",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "rotate": 45,
+                "interval": 0
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "Ridley Scott",
+                "David Yates",
+                "M. Night Shyamalan",
+                "Paul W.S. Anderson",
+                "Michael Bay",
+                "Zack Snyder",
+                "Denis Villeneuve",
+                "Woody Allen",
+                "Peter Berg",
+                "Danny Boyle"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u62cd\u6444\u7535\u5f71\u6570",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "\u524d10\u4f4d\u5bfc\u6f14\u7684\u62cd\u6444\u7535\u5f71\u6570",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_line_10.setOption(option_line_10);
+    </script>
+<br/>    </div>
+    <script>
+            $('#bar').css('border-style', 'dashed').css('border-width', '0px');$("#bar>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#bar'), function() { chart_bar.resize()});
+            $('#line_1').css('border-style', 'dashed').css('border-width', '0px');$("#line_1>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#line_1'), function() { chart_line_1.resize()});
+            $('#scatter_1').css('border-style', 'dashed').css('border-width', '0px');$("#scatter_1>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#scatter_1'), function() { chart_scatter_1.resize()});
+            $('#scatter_2').css('border-style', 'dashed').css('border-width', '0px');$("#scatter_2>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#scatter_2'), function() { chart_scatter_2.resize()});
+            $('#line_5').css('border-style', 'dashed').css('border-width', '0px');$("#line_5>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#line_5'), function() { chart_line_5.resize()});
+            $('#line_10').css('border-style', 'dashed').css('border-width', '0px');$("#line_10>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#line_10'), function() { chart_line_10.resize()});
+            var charts_id = ['bar','line_1','scatter_1','scatter_2','line_5','line_10'];
+function downloadCfg () {
+    const fileName = 'chart_config.json'
+    let downLink = document.createElement('a')
+    downLink.download = fileName
+
+    let result = []
+    for(let i=0; i<charts_id.length; i++) {
+        chart = $('#'+charts_id[i])
+        result.push({
+            cid: charts_id[i],
+            width: chart.css("width"),
+            height: chart.css("height"),
+            top: chart.offset().top + "px",
+            left: chart.offset().left + "px"
+        })
+    }
+
+    let blob = new Blob([JSON.stringify(result)])
+    downLink.href = URL.createObjectURL(blob)
+    document.body.appendChild(downLink)
+    downLink.click()
+    document.body.removeChild(downLink)
+}
+    </script>
+</body>
+</html>
